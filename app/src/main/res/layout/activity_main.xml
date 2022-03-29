@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="100dp"
-        android:text="Hello World! This is demo for Text To Speech."
+        android:text="Demo synthese vocale."
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,7 +34,7 @@
         android:layout_marginStart="16dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Press to Speak the Entered Text"
+        android:text="Pressez pour utiliser la synthèse vocale"
         app:layout_constraintTop_toBottomOf="@id/etEnteredText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

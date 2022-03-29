@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         binding?.btnSpeak?.setOnClickListener { view ->
 
             if (binding?.etEnteredText?.text!!.isEmpty()) {
-                Toast.makeText(this@MainActivity, "Enter a text to speak.", Toast.LENGTH_SHORT)
+                Toast.makeText(this@MainActivity, "Entrer un texte pour utiliser la synthese vocale.", Toast.LENGTH_SHORT)
                     .show()
             } else {
                 speakOut(binding?.etEnteredText?.text.toString())
@@ -44,8 +44,8 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
     override fun onInit(status: Int) {
 
         if (status == TextToSpeech.SUCCESS) {
-            // set US English as language for tts
-            val result = tts!!.setLanguage(Locale.US)
+            // set FR Français as language for tts
+            val result = tts!!.setLanguage(Locale.FRANCE)
 
             if (result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED) {
                 Log.e("TTS", "The Language specified is not supported!")
